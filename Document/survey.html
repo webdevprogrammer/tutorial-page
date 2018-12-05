@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome to the Web Page Tutorial</title>
+	<meta charset= "utf-8">
+	<link type="text/css" rel="stylesheet" href="mystyle.css"/>
+</head>
+
+	<body>
+		<div id= "wrapper">
+			<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+			<div class= "headerleft">
+				<a href= "..\index.html"><img src = "Images\logo.png" alt= "Logo Tutorial"></img></a>
+				<header><h1><a href= "..\index.html">Ishor's Web Tutorial</a></h1></header>
+			</div>
+			<div class = "headerright">
+				<script>
+					var now = new Date();
+					var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+					var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+					var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+					function fourdigits(number) {
+					return (number < 1000) ? number + 1900 : number;
+					}
+					today = days[now.getDay()] + ", " +
+					months[now.getMonth()] + " " +
+					date + ", " +
+					(fourdigits(now.getYear())) ;
+					document.write(today);
+				</script>
+
+				<form class= "search" action= "http://www.lethbridgecollege.ca/search" method= "post">
+					<input id="textstyle" type="text" name="textbox"/>
+					<input id="button" type="submit" name="submit" value="Search"/>
+				</form>
+			</div>
+
+			<div id = "menu">
+				<ul>
+					<li><a href= "../index.html">Home</a></li>
+					<li><a href= "#">Tutorial</a>
+						<ul>
+							<li><a href= "tutorial.html">Tutorial Link</a></li>
+							<li><a href= "tutorialstep.html">Web Tutorial Steps</a></li>
+							<li><a href= "tutorialvideos.html">Web Tutorial Videos</a></li>
+							<li><a href= "http://www.w3schools.com/">HTML and CSS</a></li>
+						</ul>
+					</li>
+
+					<li><a href= "#">Services</a>
+						<ul>
+							<li><a href= "..\Document\survey.html">Survey</a></li>
+							<li><a href= "https://www.surveymonkey.com/mp/website-feedback-survey-template/">Website Feedback Survey</a></li>
+							<li><a href= "http://www.resounddigital.com/blog/website-visitor-surveys-the-questions-you-need-to-ask.html">Website Visitor Survey</a></li>
+							<li><a href= "https://www.snapsurveys.com/">Survey Software</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Directory</a>
+						<ul>
+							<li><a href= "directory.html">My Biography</a></li>
+							<li><a href= "gallery.html">My Gallery</a></li>
+							<li><a href= "https://www.mystorybook.com/">My Story</a></li>
+							<li><a href= "http://www.nepal.com/">My Hometown</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Contact Us</a>
+						<ul>
+							<li><a href= "contact.html">Contact Information</a></li>
+							<li><a href= "aboutus.html">About Us</a></li>
+							<li><a href= "https://www.question.com/">Any Question</a></li>
+							<li><a href= "http://www.enjoytheweb.net/">Enjoy The Web</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><br><br>
+
+			<div class="question">
+			<form>
+				<table style= ""align= "center" border= "2">
+					<tr>
+						<th colspan="2" align= "center"><h2 style = "color:black">Website Tutorial Survey</h3></th>
+					</tr>
+
+					<tr>
+						<td colspan = "2" align="left"> &nbsp1. What one thing your eager to learn on Future from this website?<br>
+							&nbsp&nbsp&nbsp <input type="radio" name="MyFav">HTML</input> <br>
+							&nbsp&nbsp&nbsp <input type="radio" name="MyFav">CSS</input> <br>
+							&nbsp&nbsp&nbsp <input type="radio" name="MyFav">JAVA</input> <br>
+							&nbsp&nbsp&nbsp <input type="radio" name="MyFav">PHP</input> <br>
+							&nbsp&nbsp&nbsp <input type="radio" name="MyFav">Bootstrap</input> <br>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan = "2" align="left">&nbsp2. What kind you Tutorial you are prefered on using?<br>
+							&nbsp&nbsp&nbsp <input type="checkbox" name="MyFav">HTML</input> <br>
+							&nbsp&nbsp&nbsp <input type="checkbox" name="MyFav">CSS</input> <br>
+							&nbsp&nbsp&nbsp <input type="checkbox" name="MyFav">JAVA</input> <br>
+							&nbsp&nbsp&nbsp <input type="checkbox" name="MyFav">PHP</input> <br>
+							&nbsp&nbsp&nbsp <input type="checkbox" name="MyFav">Bootstrap</input>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan = "2" align="left">&nbsp3. The Website is designed with HTML and CSS?<br>
+							&nbsp&nbsp&nbsp <input type="radio" name="MyFav">True</input>
+							&nbsp&nbsp&nbsp <input type="radio" name="MyFav">False </input>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2" align="left">&nbsp4. When dealing with the navigation bar, what should you use to make a space between Home, Tutorial, Services?<br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text"name="name" maxlength="25"></input> &nbsp
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2" align="left">&nbsp5. How often do you practice for creating an website?
+							<select name="Sport">
+								<option value= "FB">Always</option>
+								<option value= "VB">Never</option>
+								<option value= "BB">Sometimes</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2" align="left">&nbsp6. What program do you often use to create a great website?<br>
+							&nbsp&nbsp&nbsp <select name="listen" size="3">
+								<option>Classify one from this</option>
+								<option>Javascript</option>
+								<option>HTML and CSS</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2" align="left">&nbsp7. Write an feedback  about 25 to 50 words, what else you need more from these website?&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br>
+							&nbsp&nbsp&nbsp <textarea type="textinput" name= "comment" rows= "5" Cols="65"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2" align="left">&nbsp8. Enter your E-Mail Address<br>
+							&nbsp&nbsp&nbsp <input type= "text" name="mailto"></input>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2" align="left">&nbsp&nbsp&nbsp Upload File
+							<input type="file" name="myfile"></input>
+							<input type="submit" value="Upload"></input><br>
+							&nbsp&nbsp&nbsp <input type="submit"></input>
+						</td>
+					</tr>
+				</table>
+			</form>
+			</div>
+				<br><br>
+
+				<div class= "footer">
+					<div class="fb-like" data-href="https://www.facebook.com/ishor.bastola" data-width="35px" data-layout="button" data-action="recommend"
+					data-size="small" data-show-faces="false" data-share="false"></div>
+
+					<a href="https://twitter.com/login" class="twitter-follow-button" data-show-count="false"> <img src="Images\twitterlogo.jpg"></img>
+					</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+					12 Salish Bay West, Lethbridge, Alberta, T1K 7T8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright 2016 | Privacy Policy | Legal Issues
+			</div>
+		</div>
+	</body>
+</html>

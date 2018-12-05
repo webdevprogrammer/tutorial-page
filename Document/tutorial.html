@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome to the Web Page Tutorial</title>
+	<meta charset= "utf-8">
+	<link type="text/css" rel="stylesheet" href="mystyle.css"/>
+</head>
+
+<body>
+	<div id= "wrapper">
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+				fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+
+		<div class= "headerleft">
+				<a href= "..\index.html"><img src = "images\logo.png" alt= "Logo Tutorial"></img></a>
+				<header><h1><a href= "..\index.html">Ishor's Web Tutorial</a></h1></header>
+			</div>
+
+			<div class = "headerright">
+				<script>
+					var now = new Date();
+					var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+					var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+					var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+					function fourdigits(number) {
+					return (number < 1000) ? number + 1900 : number;
+					}
+					today = days[now.getDay()] + ", " +
+					months[now.getMonth()] + " " +
+					date + ", " +
+					(fourdigits(now.getYear())) ;
+					document.write(today);
+				</script>
+
+				<form class= "search" action= "http://www.lethbridgecollege.ca/search" method= "post">
+					<input id="textstyle" type="text" name="textbox"/>
+					<input id="button" type="submit" name="submit" value="Search"/>
+				</form>
+			</div>
+
+			<div id = "menu">
+				<ul>
+					<li><a href= "../index.html">Home</a></li>
+					<li><a href= "#">Tutorial</a>
+						<ul>
+							<li><a href= "..\Document\tutorial.html">Tutorial Link</a></li>
+							<li><a href= "tutorialstep.html">Web Tutorial Step</a></li>
+							<li><a href= "tutorialvideos.html">HTML</a></li>
+							<li><a href= "http://www.w3schools.com/html/html_css.asp">CSS</a></li>
+						</ul>
+					</li>
+
+					<li><a href= "#">Services</a>
+						<ul>
+							<li><a href= "survey.html">Survey</a></li>
+							<li><a href= "https://www.surveymonkey.com/mp/website-feedback-survey-template/">Website Feedback Survey</a></li>
+							<li><a href= "http://www.resounddigital.com/blog/website-visitor-surveys-the-questions-you-need-to-ask.html">Website Visitor Survey</a></li>
+							<li><a href= "https://www.snapsurveys.com/">Survey Software</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Directory</a>
+						<ul>
+							<li><a href= "directory.html">My Biography</a></li>
+							<li><a href= "gallery.html">My Gallery</a></li>
+							<li><a href= "https://www.mystorybook.com/">My Story</a></li>
+							<li><a href= "http://www.nepal.com/">My Hometown</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Contact Us</a>
+						<ul>
+							<li><a href= "contact.html">Contact Information</a></li>
+							<li><a href= "aboutus.html">About Us</a></li>
+							<li><a href= "https://www.question.com/">Any Question</a></li>
+							<li><a href= "http://www.enjoytheweb.net/">Enjoy The Web</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div id= "main">
+				<div class= "step">
+					<h2>Steps To Create Website, click below to see the Steps</h2><br>
+					<h4>1.&nbsp&nbsp <a href="tutorialstep.html">How to Create Header Section including logo with search bar on your Web Page Step By Step?</a></h4><br>
+					<h4>2.&nbsp&nbsp <a href="tutorialstep.html">How to Create Drop Down Menu on your Web Page Step By Step?</a></h4><br>
+					<h4>3.&nbsp&nbsp <a href="tutorialstep.html">How to Add video on your Web Page Step By Step?</a></h4><br>
+					<h4>4.&nbsp&nbsp <a href="tutorialstep.html">How to Add Map on your Web Page Step By Step?</a></h4><br>
+				</div>
+			</div>
+
+			<br><br>
+			<div class= "footer">
+				<div class="fb-like" data-href="https://www.facebook.com/ishor.bastola" data-width="35px" data-layout="button" data-action="recommend"
+				data-size="small" data-show-faces="false" data-share="false"></div>
+
+				<a href="https://twitter.com/login" class="twitter-follow-button" data-show-count="false"> <img src="Images\twitterlogo.jpg"></img>
+				</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				12 Salish Bay West, Lethbridge, Alberta, T1K 7T8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright 2016 | Privacy Policy | Legal Issues
+			</div>
+		</div>
+	</body>
+</html>

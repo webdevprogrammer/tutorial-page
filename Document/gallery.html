@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome to the Web Page Tutorial</title>
+	<meta charset= "utf-8">
+	<link type="text/css" rel="stylesheet" href="mystyle.css"/>
+</head>
+
+	<body>
+		<div id= "wrapper">
+			<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+			<div class= "headerleft">
+				<a href= "..\index.html"><img src = "Images\logo.png" alt= "Logo Tutorial"></img></a>
+				<header><h1><a href= "..\index.html">Ishor's Web Tutorial</a></h1></header>
+			</div>
+
+					<div class = "headerright">
+				<script>
+					var now = new Date();
+					var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+					var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+					var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+					function fourdigits(number) {
+					return (number < 1000) ? number + 1900 : number;
+					}
+					today = days[now.getDay()] + ", " +
+					months[now.getMonth()] + " " +
+					date + ", " +
+					(fourdigits(now.getYear())) ;
+					document.write(today);
+				</script>
+
+				<form class= "search" action= "http://www.lethbridgecollege.ca/search" method= "post">
+					<input id="textstyle" type="text" name="textbox"/>
+					<input id="button" type="submit" name="submit" value="Search"/>
+				</form>
+			</div>
+
+
+			<div id = "menu">
+				<ul>
+					<li><a href= "../index.html">Home</a></li>
+					<li><a href= "#">Tutorials</a>
+						<ul>
+							<li><a href= "tutorial.html">Tutorial Link</a></li>
+							<li><a href= "tutorialstep.html">Web Tutorial Steps</a></li>
+							<li><a href= "tutorialvideos.html">Web Tutorial Videos</a></li>
+							<li><a href= "http://www.w3schools.com/">HTML and CSS</a></li>
+						</ul>
+					</li>
+
+					<li><a href= "#">Services</a>
+						<ul>
+							<li><a href= "survey.html">Survey</a></li>
+							<li><a href= "https://www.surveymonkey.com/mp/website-feedback-survey-template/">Website Feedback Survey</a></li>
+							<li><a href= "http://www.resounddigital.com/blog/website-visitor-surveys-the-questions-you-need-to-ask.html">Website Visitor Survey</a></li>
+							<li><a href= "https://www.snapsurveys.com/">Survey Software</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Directory</a>
+						<ul>
+							<li><a href= "directory.html">My Biography</a></li>
+							<li><a href= "..\Document\gallery.html">My Gallery</a></li>
+							<li><a href= "https://www.mystorybook.com/">My Story</a></li>
+							<li><a href= "http://www.nepal.com/">My Hometown</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Contact Us</a>
+						<ul>
+							<li><a href= "contact.html">Contact Information</a></li>
+							<li><a href= "aboutus.html">About Us</a></li>
+							<li><a href= "https://www.question.com/">Any Question</a></li>
+							<li><a href= "http://www.enjoytheweb.net/">Enjoy The Web</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<h2>My Photo Gallery</h2>
+			<div id="gallery">
+				<div id= "square">
+					<a href="#box1"><img src= "Images\Ishor.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box2"><img src= "Images\Ishor1.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box3"><img src= "Images\Ishor2.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box4"><img src= "Images\Ishor3.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box5"><img src= "Images\Ishor4.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box6"><img src= "Images\Ishor5.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box7"><img src= "Images\Ishor6.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box8"><img src= "Images\Ishor7.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box9"><img src= "Images\Ishor8.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box10"><img src= "Images\Ishor9.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box11"><img src= "Images\Ishor10.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box12"><img src= "Images\Ishor11.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box13"><img src= "Images\Ishor12.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box14"><img src= "Images\Ishor13.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box15"><img src= "Images\Ishor14.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box16"><img src= "Images\Ishor15.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box17"><img src= "Images\Ishor16.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box18"><img src= "Images\Ishor17.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box19"><img src= "Images\Ishor18.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box20"><img src= "Images\Ishor19.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box21"><img src= "Images\Ishor20.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box22"><img src= "Images\Ishor21.jpg"></img></a>
+				</div>
+				<div id= "square">
+					<a href="#box23"><img src= "Images\Ishor22.jpg"></img></a>
+				</div>
+			</div>
+
+
+
+			<div class ="box" id="box1">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor.jpg"></img>
+					</div>
+					<p><a href="#box2" id="next">Next</a><a href="#box23" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box2">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor1.jpg"></img>
+					</div>
+					<p><a href="#box3" id="next">Next</a><a href="#box1" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box3">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor2.jpg"></img>
+					</div>
+					<p><a href="#box4" id="next">Next</a><a href="#box2" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box4">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor3.jpg"></img>
+					</div>
+					<p><a href="#box5" id="next">Next</a><a href="#box3" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box5">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor4.jpg"></img>
+					</div>
+					<p><a href="#box6" id="next">Next</a><a href="#box4" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box6">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor5.jpg"></img>
+					</div>
+					<p><a href="#box7" id="next">Next</a><a href="#box5" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box7">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor6.jpg"></img>
+					</div>
+					<p><a href="#box8" id="next">Next</a><a href="#box6" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box8">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor7.jpg"></img>
+					</div>
+					<p><a href="#box9" id="next">Next</a><a href="#box7" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box9">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor8.jpg"></img>
+					</div>
+					<p><a href="#box10" id="next">Next</a><a href="#box8" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box10">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor9.jpg"></img>
+					</div>
+					<p><a href="#box11" id="next">Next</a><a href="#box9" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box11">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor10.jpg"></img>
+					</div>
+					<p><a href="#box12" id="next">Next</a><a href="#box10" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box12">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor11.jpg"></img>
+					</div>
+					<p><a href="#box13" id="next">Next</a><a href="#box11" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box13">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor12.jpg"></img>
+					</div>
+					<p><a href="#box14" id="next">Next</a><a href="#box12" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box14">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor13.jpg"></img>
+					</div>
+					<p><a href="#box15" id="next">Next</a><a href="#box13" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box15">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor14.jpg"></img>
+					</div>
+					<p><a href="#box16" id="next">Next</a><a href="#box14" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box16">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor15.jpg"></img>
+					</div>
+					<p><a href="#box17" id="next">Next</a><a href="#box15" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box17">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor16.jpg"></img>
+					</div>
+					<p><a href="#box18" id="next">Next</a><a href="#box16" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box18">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor17.jpg"></img>
+					</div>
+					<p><a href="#box19" id="next">Next</a><a href="#box17" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box19">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor18.jpg"></img>
+					</div>
+					<p><a href="#box20" id="next">Next</a><a href="#box18" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box20">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor19.jpg"></img>
+					</div>
+					<p><a href="#box21" id="next">Next</a><a href="#box19" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box21">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor20.jpg"></img>
+					</div>
+					<p><a href="#box22" id="next">Next</a><a href="#box20" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box22">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor21.jpg"></img>
+					</div>
+					<p><a href="#box23" id="next">Next</a><a href="#box21" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<div class ="box" id="box23">
+				<div id = "outsidebox">
+					<p class="title">Ishor Bastola<a href="#" id="cross">X</a></p>
+					<div id="insidebox">
+						<img src= "Images\Ishor22.jpg"></img>
+					</div>
+					<p><a href="#box1" id="next">Next</a><a href="#box22" id="previous">Previous</a></p>
+				</div>
+			</div>
+
+			<br><br><div class= "footer">
+				<div class="fb-like" data-href="https://www.facebook.com/ishor.bastola" data-width="35px" data-layout="button" data-action="recommend"
+				data-size="small" data-show-faces="false" data-share="false"></div>
+
+				<a href="https://twitter.com/login" class="twitter-follow-button" data-show-count="false"> <img src="Images\twitterlogo.jpg"></img>
+				</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				12 Salish Bay West, Lethbridge, Alberta, T1K 7T8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				Copyright 2016 | Privacy Policy | Legal Issues</div>
+		</div>
+	</body>
+</html>

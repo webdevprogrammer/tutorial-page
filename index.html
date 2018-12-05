@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome to the Web Page Tutorial</title>
+	<meta charset= "utf-8">
+	<link type="text/css" rel="stylesheet" href="mystyle.css"/>
+</head>
+
+	<body>
+		<div id= "wrapper">
+			<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				</script>
+
+			<div class= "headerleft">
+				<a href= "index.html"><img src = "images\logo.png" alt= "Logo Tutorial"></img></a>
+				<header><h1><a href= "index.html">Ishor's Web Tutorial</a></h1></header>
+			</div>
+
+			<div class = "headerright">
+				<script>
+					var now = new Date();
+					var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+					var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+					var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+					function fourdigits(number) {
+					return (number < 1000) ? number + 1900 : number;
+					}
+					today = days[now.getDay()] + ", " +
+					months[now.getMonth()] + " " +
+					date + ", " +
+					(fourdigits(now.getYear())) ;
+					document.write(today);
+				</script>
+
+				<form class= "search" action= "http://www.lethbridgecollege.ca/search" method= "post">
+					<input id="textstyle" type="text" name="textbox"/>
+					<input id="button" type="submit" name="submit" value="Search"/>
+				</form>
+			</div>
+
+			<div id = "menu">
+				<ul>
+					<li><a href= "index.html">Home</a></li>
+					<li><a href= "#">Tutorial</a>
+						<ul>
+							<li><a href= "Document\tutorial.html">Tutorial Link</a></li>
+							<li><a href= "Document\tutorialstep.html">Web Tutorial</a></li>
+							<li><a href= "Document\tutorialvideos.html">Web Tutorial Videos</a></li>
+							<li><a href= "http://www.w3schools.com/">HTML and CSS</a></li>
+						</ul>
+					</li>
+
+					<li><a href= "#">Services</a>
+						<ul>
+							<li><a href= "Document/survey.html">Survey</a></li>
+							<li><a href= "https://www.surveymonkey.com/mp/website-feedback-survey-template/">Website Feedback Survey</a></li>
+							<li><a href= "http://www.resounddigital.com/blog/website-visitor-surveys-the-questions-you-need-to-ask.html">Website Visitor Survey</a></li>
+							<li><a href= "https://www.snapsurveys.com/">Survey Software</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Directory</a>
+						<ul>
+							<li><a href= "Document/directory.html">My Biography</a></li>
+							<li><a href= "Document/gallery.html">My Gallery</a></li>
+							<li><a href= "https://www.mystorybook.com/">My Story</a></li>
+							<li><a href= "http://www.nepal.com/">My Hometown</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Contact Us</a>
+						<ul>
+							<li><a href= "Document/contact.html">Contact Information</a></li>
+							<li><a href= "Document/aboutus.html">About Us</a></li>
+							<li><a href= "https://www.question.com/">Any Question</a></li>
+							<li><a href= "http://www.enjoytheweb.net/">Enjoy The Web</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<main>
+			<div class= "sliding_picture">
+				<audio autoplay="autoplay" loop="loop" hidden="true">
+				<source src="Video-Audio/Kalimba.mp3" type="audio/mpeg">
+				</audio>
+				<script type="text/javascript">
+					var slideimages = new Array()
+					slideimages[0] = new Images()
+					slideimages[1] = new Images()
+					slideimages[2] = new Images()
+					slideimages[3] = new Images()
+					slideimages[4] = new Images()
+					slideimages[5] = new Images()
+					slideimages[6] = new Images()
+					slideimages[7] = new Images()
+					slideimages[8] = new Images()
+					slideimages[9] = new Images()
+					slideimages[0].src = "Images/tutorial1.jpg"
+					slideimages[1].src = "Images/tutorial2.JPG"
+					slideimages[2].src = "Images/tutorial3.JPG"
+					slideimages[3].src = "Images/tutorial4.JPG"
+					slideimages[4].src = "Images/tutorial5.JPG"
+					slideimages[5].src = "Images/tutorial6.JPG"
+					slideimages[6].src = "Images/tutorial7.JPG"
+					slideimages[7].src = "Images/tutorial8.JPG"
+					slideimages[8].src = "Images/tutorial9.JPG"
+					slideimages[9].src = "Images/tutorial0.JPG"
+			</script>
+				<img src= "Images/tutorial1.jpg" align="left"></img>
+					<script type="text/javascript">
+						var SlideNum=0
+						function slidpic()
+							{
+							if (!document.Images)
+							return
+							document.getElementsyId('slide').src = slideimages[SlideNum].src
+							if (SlideNum<9)
+								{
+								SlideNum++;
+								}
+							else
+								{
+								SlideNum=0;
+								}
+							setTimeout("slidpic()",3000);
+							}
+						slidpic();
+					</script>
+
+				<h3 style = "color: white;">Website Information</h3><br>
+					<p>	This is our tutorial page of Web Development using HTML and CSS where we can create a great web page.
+						In this page, you can learn how to make Header, Search Bar and time on the same line. Second, a Navigation Bar With Drop-Down-Menu
+						where you can use lot of differnt style like hover, display,etc. After that you can learn about many more things with HTML as well
+						 as creating CSS style and linking them to the HTML document and you can see there is weekly tutorial on this page where you can
+						 learn many things when u have a free time.
+					</p>
+			</div>
+
+			<br>
+
+			<div class="video">
+				<video width="300" height="200" border="2" controls /><source src="Video-Audio\movie.webm" type="Video/mp4" />
+			</div>
+			<div class = "map">
+							<div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=3000%20College%20Dr%20S%2C%20Lethbridge%2C%20AB%20T1K%201L6&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/webdesign-essen/"></a></div><style>.mapouter{text-align:left;height:215px;width:364px;}.gmap_canvas {overflow:hidden;background:none!important;height:215px;width:364px;}</style></div>
+			</div>
+
+		</main>
+
+
+		<div class="event">
+			<table bgcolor = "#006600" width = "1050"  cellpadding = "5" cellspacing = "1" border "3">
+				<tr>
+					<th style= "background-color: #20202f; padding: 10px;"  align= "center" colspan= "9"><font color= "white" >Tutorial Event</font></th>
+				</tr>
+
+				<tr>
+					<th><image src = "Images\logo2.png" alt= "Logo" width= "110px"></image></th>
+					<th style="padding:5px" bgcolor= "red"><font color="White">Monday</font></th>
+					<th style="padding:5px" bgcolor= "red"><font color="White">Tuesday</font></th>
+					<th style="padding:5px" bgcolor= "red"><font color="White">Wednesday</font></th>
+					<th style="padding:5px" bgcolor= "red"><font color="White">Thursday</font></th>
+					<th bgcolor= "red"><font color="White">Friday</font></th>
+				</tr>
+
+				<tr bgcolor= "silver">
+					<td style="text-align:center; font-weight:bold;"><font color="white">HTML</font></td>
+					<td align= "center" colspan= "2"><font color= "purple">1. Creating header with logo <br>
+					2. Adding time and search bar right side of header</font></td>
+					<td align= "center" colspan= "2"><font color= "purple">1. Creating Navigation bar with Drop Down Menus<br>
+					2. Adding more stuff to Main Bar like pragraph, photo,etc.</font></td>
+					<td align= "center"><font color= "purple">1. Creating footer<br>2. Wrap Up with everything and make a wonderful website</font></td>
+				</tr>
+
+				<tr bgcolor= "#ff9326">
+					<td style="text-align:center; font-weight:bold;"><font color="white">CSS</font></td>
+					<td align= "center" colspan= "2"><font color= "purple">1. Linking CSS on the HTML page <br>2. Adding CSS style on Header<br>
+					3. Adding CSS style on time and search bar</font></td>
+					<td align= "center" colspan= "2"><font color= "purple">1. Adding CSS style on Navigation Bar with Drop Down Menus<br>
+					2. Adding CSS style on Main Bar</font></font></td>
+					<td align= "center" ><font color= "purple">1. Add CSS style on Footer<br>2. Missing Anything then Fix It</font></td>
+				</tr>
+
+				<tr bgcolor= "silver">
+					<td style="text-align:center; font-weight:bold;"><font color="white">Image Gallery</font></td>
+					<td align= "center" ><font color= "purple">1. Create Folder of Image<br>2. Add some photos from google or your own</font></td>
+					<td align= "center" colspan= "2"><font color= "purple">1. Start making gallery with HTML and CSS <br> 2. CSS style<br></font></td>
+					<td align= "center" colspan= "2"><font color= "purple">1. Setting Up the ID and using that with CSS style<br>
+					2. Creating box with title bar<br>3. Linking the box with next, previous and cross bottom </font></td>
+				</tr>
+			</table>
+
+		</div>
+
+			<br><br><div class= "footer">
+				<div class="fb-like" data-href="https://www.facebook.com/ishor.bastola" data-width="35px" data-layout="button" data-action="recommend"
+				data-size="small" data-show-faces="false" data-share="false"></div>
+
+				<a href="https://twitter.com/login" class="twitter-follow-button" data-show-count="false"> <img src="Images\twitterlogo.jpg"></img>
+				</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+			12 Salish Bay West, Lethbridge, Alberta, T1K 7T8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright 2016 | Privacy Policy | Legal Issues</div>
+		</div>
+	</body>
+</html>

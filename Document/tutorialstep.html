@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome to the Web Page Tutorial</title>
+	<meta charset= "utf-8">
+	<link type="text/css" rel="stylesheet" href="mystyle.css"/>
+</head>
+
+<body>
+	<div id= "wrapper">
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+				fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+
+		<div class= "headerleft">
+				<a href= "..\index.html"><img src = "images\logo.png" alt= "Logo Tutorial"></img></a>
+				<header><h1><a href= "..\index.html">Ishor's Web Tutorial</a></h1></header>
+			</div>
+
+			<div class = "headerright">
+				<script>
+					var now = new Date();
+					var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+					var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+					var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+					function fourdigits(number) {
+					return (number < 1000) ? number + 1900 : number;
+					}
+					today = days[now.getDay()] + ", " +
+					months[now.getMonth()] + " " +
+					date + ", " +
+					(fourdigits(now.getYear())) ;
+					document.write(today);
+				</script>
+
+				<form class= "search" action= "http://www.lethbridgecollege.ca/search" method= "post">
+					<input id="textstyle" type="text" name="textbox"/>
+					<input id="button" type="submit" name="submit" value="Search"/>
+				</form>
+			</div>
+
+			<div id = "menu">
+				<ul>
+					<li><a href= "../index.html">Home</a></li>
+					<li><a href= "#">Tutorial</a>
+						<ul>
+							<li><a href= "tutorial.html">Tutorial Link</a></li>
+							<li><a href= "..\Document\tutorialstep.html">Web Tutorial Step</a></li>
+							<li><a href= "tutorialvideos.html">Web Tutorial Videos</a></li>
+							<li><a href= "http://www.w3schools.com/html/html_css.asp">CSS</a></li>
+						</ul>
+					</li>
+
+					<li><a href= "#">Services</a>
+						<ul>
+							<li><a href= "survey.html">Survey</a></li>
+							<li><a href= "https://www.surveymonkey.com/mp/website-feedback-survey-template/">Website Feedback Survey</a></li>
+							<li><a href= "http://www.resounddigital.com/blog/website-visitor-surveys-the-questions-you-need-to-ask.html">Website Visitor Survey</a></li>
+							<li><a href= "https://www.snapsurveys.com/">Survey Software</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Directory</a>
+						<ul>
+							<li><a href= "directory.html">My Biography</a></li>
+							<li><a href= "gallery.html">My Gallery</a></li>
+							<li><a href= "https://www.mystorybook.com/">My Story</a></li>
+							<li><a href= "http://www.nepal.com/">My Hometown</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Contact Us</a>
+						<ul>
+							<li><a href= "contact.html">Contact Information</a></li>
+							<li><a href= "aboutus.html">About Us</a></li>
+							<li><a href= "https://www.question.com/">Any Question</a></li>
+							<li><a href= "http://www.enjoytheweb.net/">Enjoy The Web</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div id= "main">
+				<div class= "allstep">
+					<h4>1. How to Create Header Section including logo with search bar on your Web Page Step By Step?</h4><br>
+						<p>Step 1. Create a folder on your desktop.</p>
+						<p>Step 2. Open the notepad++ text-editor on your computer, save it as index.html or whatever you like and create one more for CSS style.</p>
+						<p>Step 3. Write head section of the HTML and start adding stuff on the body part.</p>
+						<p>Step 4. On the body part, create a two div for the left side of header with logo and on the right site for the search bar.</p>
+						<p>Step 5. Add HTML and CSS style for the code.</p>
+						<h4><a href="tutorialvideos.html">Click Here to See The Video</a></h4>
+
+						<br><br><br>
+
+					<h4>2. How to Create Drop Down Menu on your Web Page Step By Step?</h4><br>
+						<p>Step 1. Create a folder on your desktop.</p>
+						<p>Step 2. Open the notepad++ text-editor on your computer, save it as index.html or whatever you like and create one more for CSS style.</p>
+						<p>Step 3. Write head section of the HTML and start adding stuff on the body part.</p>
+						<p>Step 4. On the body part, create a div for the navigation bar.</p>
+						<p>Step 5. Add HTML and CSS style for the code.</p>
+						<h4><a href="tutorialvideos.html">Click Here to See The Video</a></h4>
+
+						<br><br><br>
+
+					<h4>3. How to Add video on your Web Page Step By Step?</h4><br>
+						<p>Step 1. Create a folder on your desktop.</p>
+						<p>Step 2. Open the notepad++ text-editor on your computer, save it as index.html or whatever you like and create one more for CSS style.</p>
+						<p>Step 3. Write head section of the HTML and start adding stuff on the body part.</p>
+						<p>Step 4. On the body part, create a div for the video.</p>
+						<p>Step 5. Add HTML and CSS style for the code.</p>
+						<h4><a href="tutorialvideos.html">Click Here to See The Video</a></h4>
+
+						<br><br><br>
+
+					<h4>4. How to Add Map on your Web Page Step By Step?</h4><br>
+						<p>Step 1. Create a folder on your desktop.</p>
+						<p>Step 2. Open the notepad++ text-editor on your computer, save it as index.html or whatever you like and create one more for CSS style.</p>
+						<p>Step 3. Write head section of the HTML and start adding stuff on the body part.</p>
+						<p>Step 4. On the body part, create a one div id called map or whatever you like.</p>
+						<p>Step 5. Go To Google and Generate the Code for Map and paste it to HTML editor.</p>
+						<p>Step 6. Create CSS for to make looks good for the map.</p>
+						<h4><a href="tutorialvideos.html">Click Here to See The Video</a></h4>
+
+
+				</div>
+			</div>
+
+			<br><br>
+			<div class= "footer">
+				<div class="fb-like" data-href="https://www.facebook.com/ishor.bastola" data-width="35px" data-layout="button" data-action="recommend"
+				data-size="small" data-show-faces="false" data-share="false"></div>
+
+				<a href="https://twitter.com/login" class="twitter-follow-button" data-show-count="false"> <img src="Images\twitterlogo.jpg"></img>
+				</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				12 Salish Bay West, Lethbridge, Alberta, T1K 7T8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright 2016 | Privacy Policy | Legal Issues
+			</div>
+		</div>
+	</body>
+</html>

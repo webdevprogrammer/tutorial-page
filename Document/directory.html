@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome to the Web Page Tutorial</title>
+	<meta charset= "utf-8">
+	<link type="text/css" rel="stylesheet" href="mystyle.css"/>
+</head>
+
+	<body>
+		<div id= "wrapper">
+			<div id="fb-root"></div>
+				<script>
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+			<div class= "headerleft">
+				<a href= "..\index.html"><img src = "images\logo.png" alt= "Logo Tutorial"></img></a>
+				<header><h1><a href= "..\index.html">Ishor's Web Tutorial</a></h1></header>
+			</div>
+
+			<div class = "headerright">
+				<script>
+					var now = new Date();
+					var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+					var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+					var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+					function fourdigits(number) {
+					return (number < 1000) ? number + 1900 : number;
+					}
+					today = days[now.getDay()] + ", " +
+					months[now.getMonth()] + " " +
+					date + ", " +
+					(fourdigits(now.getYear())) ;
+					document.write(today);
+				</script>
+
+				<form class= "search" action= "http://www.lethbridgecollege.ca/search" method= "post">
+					<input id="textstyle" type="text" name="textbox"/>
+					<input id="button" type="submit" name="submit" value="Search"/>
+				</form>
+			</div>
+
+			<div id = "menu">
+				<ul>
+					<li><a href= "../index.html">Home</a></li>
+					<li><a href= "#">Tutorial</a>
+						<ul>
+							<li><a href= "tutorial.html">Tutorial Link</a></li>
+							<li><a href= "tutorialstep.html">Web Tutorial Steps</a></li>
+							<li><a href= "tutorialvideos.html">Web Tutorial Videos</a></li>
+							<li><a href= "http://www.w3schools.com/">HTML and CSS</a></li>
+						</ul>
+					</li>
+
+					<li><a href= "#">Services</a>
+						<ul>
+							<li><a href= "survey.html">Survey</a></li>
+							<li><a href= "https://www.surveymonkey.com/mp/website-feedback-survey-template/">Website Feedback Survey</a></li>
+							<li><a href= "http://www.resounddigital.com/blog/website-visitor-surveys-the-questions-you-need-to-ask.html">Website Visitor Survey</a></li>
+							<li><a href= "https://www.snapsurveys.com/">Survey Software</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Directory</a>
+						<ul>
+							<li><a href= "..\Document\directory.html">My Biography</a></li>
+							<li><a href= "gallery.html">My Gallery</a></li>
+							<li><a href= "https://www.mystorybook.com/">My Story</a></li>
+							<li><a href= "http://www.nepal.com/">My Hometown</a></li>
+						</ul>
+					</li>
+					<li><a href= "#">Contact Us</a>
+						<ul>
+							<li><a href= "contact.html">Contact Information</a></li>
+							<li><a href= "aboutus.html">About Us</a></li>
+							<li><a href= "https://www.question.com/">Any Question</a></li>
+							<li><a href= "http://www.enjoytheweb.net/">Enjoy The Web</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<main>
+
+				<div class = "directory">
+					<p><img src= "Images\Ishor1.jpg"  align="left"></img><br><h3>Ishor Bastola</h3><br>
+					Currently Enrolled on Computer Information Technology(CIT) on Lethbridge College.<br><br>
+					Hello, My name is Ishor Bastola. I was born in Jhapa, Nepal. I had been living in Canada for 8 years. I like spending time on
+					using computer, listening music, watching movies, playing soccer and hanging out with friends. Since from my childwood, I like using
+					computers alot but there were no computer on school home, etc. We need to pay money (around Rs. 1000) for just going and learn only the basic
+					part of computer like Microsoft word, Typing Tutor, etc. Well, in Nepal there is one big problem, when someone work they get less money
+					and when we needs to buy anything like food, vegetables, etc. then its too expensive. We are refugee so, we can't afford lots of money for doing
+					those things which we like. Days are passing and the government start taking the people to the America, Canada, etc. We fill up the form and
+					apply it to come here. I was so happy when the day came that we are going to come here because we heard lots of things about this Country.
+					We are here at October 8, 2009. When we were here then the snow is falling which I never had seen the snow before. I was like too much surprised
+					and too much cold because there were too much hot in nepal. I started going to school, when I see the computers I really like to use it and I take
+					some course on high school then I think from that time I will learn about computers on future. I am done high school at 2014 and work for a year and
+					currently doing Computer Information Technology(CIT) on Lethbridge College and hope to go University for Computer Science.<br><br><br><br>
+					</p>
+
+
+				</div>
+			</main>
+
+			<br><br><div class= "footer">
+				<div class="fb-like" data-href="https://www.facebook.com/ishor.bastola" data-width="35px" data-layout="button" data-action="recommend"
+				data-size="small" data-show-faces="false" data-share="false"></div>
+
+				<a href="https://twitter.com/login" class="twitter-follow-button" data-show-count="false"> <img src="Images\twitterlogo.jpg"></img>
+				</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				12 Salish Bay West, Lethbridge, Alberta, T1K 7T8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				Copyright 2016 | Privacy Policy | Legal Issues</div>
+		</div>
+	</body>
+</html>
